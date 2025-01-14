@@ -1,58 +1,40 @@
-'use client'
-
-import Image from 'next/image';
-import React, { useEffect, useState } from 'react'
-
-interface User {
-    name: string,
-    price: number,
-    image: string,
-    id: string
-}
-
-const Flower = () => {
-    const [flower, setFlowers] = useState<User[]>([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://67862317f80b78923aa58c94.mockapi.io/test');
-                const data = await response.json();
-                setFlowers(data);
-            } catch (error) {
-                console.log("products data not found", error);
-            }
-        }
-        fetchData();
-    }, []);
-
-    console.log(flower);
-
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+const Hero = () => {
     return (
-        <div className="container mx-auto p-6 px-16">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">Our Beautiful Flowers</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {flower.map((flower) => (
-                    <div key={flower.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <Image 
-                            className="w-full h-48 object-cover"
-                            src={flower.image} 
-                            alt={flower.name} 
-                            width={300} 
-                            height={200} 
-                        />
-                        <div className="p-4">
-                            <h3 className="text-lg font-semibold text-gray-700 truncate">{flower.name}</h3>
-                            <p className="text-xl font-bold text-green-600 mt-2">${flower.price}</p>
-                            <button className="mt-4 w-full py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-300">
-                                Add to Cart
-                            </button>
-                        </div>
+        <section className="text-gray-700 body-font ">
+            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <Image
+                        className="object-cover object-center rounded-lg shadow-lg"
+                        alt="hero"
+                        src="/images/heroimg.jpg"
+                        width={500} // Increased width
+                        height={500} // Increased height
+                    />
+                </div>
+                <div className="lg:flex-grow md:w-1/2 lg:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 className="title-font text-4xl font-bold text-gray-900 mb-6">
+                        Discover the Perfect Choice
+                    </h1>
+                    <p className="mb-8 leading-relaxed text-lg">
+                        Elevate your lifestyle with high-quality, thoughtfully crafted products designed to make every moment extraordinary.
+                    </p>
+                    <div className="flex justify-center">
+                        <Link href="https://www.instagram.com/hooria_codehub?igsh=MXRuNXZ3cm83amZ6eA==">
+                            <button className="text-white bg-blue-600 border-0 py-3 px-8 focus:outline-none hover:bg-blue-700 rounded-lg text-lg">
+                                Connect With Me            </button>
+                        </Link>
+                        <Link href="/pages/products">
+                            <button className="ml-4 text-blue-600 bg-indigo-100 border-0 py-3 px-8 focus:outline-none hover:bg-indigo-200 rounded-lg text-lg">
+                                Exlpore Our Products            </button>
+                        </Link>
                     </div>
-                ))}
+                </div>
             </div>
-        </div>
-    );
+        </section>
+    )
 }
 
-export default Flower;
+export default Hero

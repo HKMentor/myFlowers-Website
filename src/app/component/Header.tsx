@@ -10,11 +10,11 @@ import {
 const Header = () => {
     return (
 
-        <header className="bg-blue-600 text-white">
+        <header className="bg-gradient-to-r from-blue-700 to-blue-400 text-white">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 {/* Logo Section */}
                 <div className="text-2xl font-bold">
-                    <Link href="/">MyShop</Link>
+                    <Link href="/" id='top'>MyShop</Link>
                 </div>
 
                 {/* Navigation Links */}
@@ -36,7 +36,7 @@ const Header = () => {
                 {/* CTA Button */}
                 <div>
                     <Link
-                        href="/cart"
+                        href="/page/cart"
                         className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200"
                     >
                         Cart
