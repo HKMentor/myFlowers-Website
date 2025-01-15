@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Hero from './component/Hero'
 
 const home = () => {
   return (
@@ -18,7 +17,7 @@ const home = () => {
           
           {/* Description Text */}
           <p className="mt-4 text-lg sm:text-xl md:text-2xl">
-            Fresh Flowers Delivered to Your Home - Perfect for Every Occasion
+            Fresh Flowers Delivered to Your Home  Perfect for Every Occasion
           </p>
           
           {/* Main Call-to-Action Button */}
@@ -30,12 +29,11 @@ const home = () => {
           <div className="mt-8">
             <p className="text-md sm:text-lg md:text-xl">Explore our wide range of beautiful flowers and make every moment special!</p>
             <button className="mt-4 px-6 py-3 bg-white text-pink-600 text-lg rounded-full hover:bg-gray-100 transition duration-300">
-              <Link href="/pages/about">Explore More</Link>
+              <Link href="/pages/hero">Explore More</Link>
             </button>
           </div>
         </div>
       </section>
-<Hero/>    
 <section className="text-gray-600 body-font bg-gradient-to-r from-indigo-100 to-purple-100">
   <div className="container px-12 py-24 mx-auto">
     <div className="flex flex-wrap w-full mb-20">
@@ -158,7 +156,7 @@ const home = () => {
         Raw Denim Heirloom Man Braid
       </h1>
       <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-        Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+        Blue bottle crucifix vinyl post ironic four dollar toast vegan taxidermy.
         Gastropub indxgo juice poutine, ramps microdosing banh mi pug.
       </p>
     </div>
@@ -192,9 +190,12 @@ const home = () => {
         </div>
       ))}
     </div>
+    <Link href="/pages/about">
     <button className="flex mx-auto mt-16 text-white bg-gradient-to-r from-purple-500 to-indigo-500 border-0 py-2 px-8 focus:outline-none hover:from-indigo-600 hover:to-purple-600 rounded-lg text-lg shadow-lg hover:shadow-xl transition duration-300">
       Explore More
     </button>
+    </Link>
+    
   </div>
 </section>
 <section className="text-gray-600 body-font bg-gradient-to-r from-pink-200 to-purple-100 mb-10">

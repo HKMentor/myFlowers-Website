@@ -26,7 +26,7 @@ const Contact = () => {
     <div className="bg-gradient-to-r from-pink-200 to-purple-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto text-center">
         <h1 className="text-3xl font-semibold text-gray-800 mb-4">Contact Us</h1>
-        <p className="text-gray-600 mb-8">We’d love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+        <p className="text-gray-600 mb-8">We,d love to hear from you! Please fill out the form below and we ll get back to you as soon as possible.</p>
 
         <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-lg shadow-lg">
           {/* Name Field */}

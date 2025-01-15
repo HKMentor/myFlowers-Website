@@ -31,7 +31,7 @@ const Cart: React.FC = () => {
         Your Shopping Cart
       </h1>
       {cartItems.length === 0 ? (
-        <p className="text-center text-gray-500">Your cart is empty. Start adding some products!</p>
+        <p className="text-center text-gray-500">Your cart is empty. Start adding some products</p>
       ) : (
         <div>
           {/* Cart Items */}

@@ -11,10 +11,10 @@ const About = () => {
                             ABOUT US
                         </h2>
                         <h1 className="md:text-3xl text-2xl font-medium title-font text-gray-900">
-                            A Blooming Journey of Nature’s Beauty
+                            A Blooming Journey of Nature  Beauty
                         </h1>
                         <p className="leading-relaxed mt-4 text-base">
-                            At [HK Essentials], we believe in the power of flowers to transform any space into a sanctuary. From our carefully curated collection of vibrant blooms to seasonal arrangements, we offer something to suit every occasion. Whether it’s a special celebration or just because, our flowers are handpicked with love and care. Explore our floral wonders today and let nature’s beauty surround you!
+                            At [HK Essentials], we believe in the power of flowers to transform any space into a sanctuary. From our carefully curated collection of vibrant blooms to seasonal arrangements, we offer something to suit every occasion. Whether its a special celebration or just because, our flowers are handpicked with love and care. Explore our floral wonders today and let nature  beauty surround you.
                         </p>
                     </div>
                     <div className="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
@@ -31,7 +31,7 @@ const About = () => {
                             Watch Our Event Setup
                         </h2>
                         <p className="leading-relaxed text-base mb-6">
-                            Take a behind-the-scenes look at how we bring events to life! In this video, we showcase the meticulous setup process for our events, from floral arrangements to final touches. Watch as we transform spaces with our expert craftsmanship, creating unforgettable experiences for every occasion. At Event Empire, we don’t just plan events – we make dreams come true!
+                            Take a behind-the-scenes look at how we bring events to life! In this video, we showcase the meticulous setup process for our events, from floral arrangements to final touches. Watch as we transform spaces with our expert craftsmanship, creating unforgettable experiences for every occasion. At Event Empire, we don,t just plan events we make dreams come true!
                         </p>
                     </div>
 
@@ -46,7 +46,7 @@ const About = () => {
                 <div className="container mx-auto text-center">
                     <h2 className="text-3xl font-semibold">Why Choose Event Empire?</h2>
                     <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                        At Event Empire, we specialize in creating breathtaking floral arrangements for every occasion. Whether it's a wedding, corporate event, or intimate gathering, we ensure each flower tells a story. Our team handpicks every stem to guarantee freshness, and our service is fast, professional, and always tailored to your unique vision. Let us transform your event into an unforgettable experience.
+                        At Event Empire, we specialize in creating breathtaking floral arrangements for every occasion. Whether its a wedding, corporate event, or intimate gathering, we ensure each flower tells a story. Our team handpicks every stem to guarantee freshness, and our service is fast, professional, and always tailored to your unique vision. Let us transform your event into an unforgettable experience.
                     </p>
                 </div>
             </section>
@@ -57,15 +57,15 @@ const About = () => {
                     <h2 className="text-3xl font-semibold">What Our Clients Say</h2>
                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-14">
                         <div className="bg-white shadow-lg p-6 rounded-lg">
-                            <p className="italic">"Event Empire transformed our venue into a floral paradise! The arrangements were breathtaking, and the team was so professional."</p>
+                            <p className="italic">Event Empire transformed our venue into a floral paradise! The arrangements were breathtaking, and the team was so professional.</p>
                             <p className="mt-4 font-semibold">- Ayesha T.</p>
                         </div>
                         <div className="bg-white shadow-lg p-6 rounded-lg">
-                            <p className="italic">"I can't thank Event Empire enough for making our wedding so memorable. The flowers were stunning, and they truly brought our vision to life!"</p>
+                            <p className="italic">I cant thank Event Empire enough for making our wedding so memorable. The flowers were stunning, and they truly brought our vision to life.</p>
                             <p className="mt-4 font-semibold">- Ali S.</p>
                         </div>
                         <div className="bg-white shadow-lg p-6 rounded-lg">
-                            <p className="italic">"From the setup to the final details, Event Empire exceeded our expectations. The floral designs added the perfect touch to our corporate event."</p>
+                            <p className="italic">From the setup to the final details, Event Empire exceeded our expectations. The floral designs added the perfect touch to our corporate event.</p>
                             <p className="mt-4 font-semibold">- Sarah P.</p>
                         </div>
                     </div>
